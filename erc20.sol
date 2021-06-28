@@ -23,7 +23,7 @@ contract SafeMath {
     }
 }
 
-contract izakxyz is ERC20Interface, SafeMath {
+contract ERC20TOKEN is ERC20Interface, SafeMath {
     string public name;
     string public symbol;
     uint8 public decimals;
@@ -34,8 +34,8 @@ contract izakxyz is ERC20Interface, SafeMath {
     mapping(address => mapping(address => uint)) allowed;
 
     constructor() public {
-        name = "izakxyz"; // token name ex: Bitcoin
-        symbol = "IZX"; // token symbol ex: BTC
+        name = "TokenName"; // CHANGEME, token name ex: Bitcoin
+        symbol = "TokenSymbol"; // CHANGEME, token symbol ex: BTC
         decimals = 8; // token decimals (ETH=18,USDT=6,BTC=8)
         _totalSupply = 1000000000000000; // total supply including decimals
 
